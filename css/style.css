@@ -1,3 +1,12 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff; 
+    background-image: 
+        radial-gradient(circle at 0% 100%, #a5fac3 0%, transparent 40%), 
+        radial-gradient(circle at 100% 100%, #f4ff94 0%, transparent 40%);
+}
+
 .navbar {
     background-color: #ffffff;
     height: 60px;
@@ -48,7 +57,6 @@
 }
 
 .main-menu{
-    background-color: #ffffff;
     height: 51.5vh;
     margin-left: 120px;
     margin-top: 120px;
