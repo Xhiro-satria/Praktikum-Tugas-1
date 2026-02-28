@@ -4,7 +4,7 @@ body {
     background-color: #ffffff; 
     background-image: 
         radial-gradient(circle at 0% 100%, #a5fac3 0%, transparent 40%), 
-        radial-gradient(circle at 100% 100%, #f4ff94 0%, transparent 40%);
+        radial-gradient(circle at 100% 100%, #e2ed7a 0%, transparent 40%);
 }
 
 .navbar {
@@ -19,9 +19,9 @@ body {
     border-radius: 8px;
     padding: 6px 10px;
     margin: 5px;
-    background: linear-gradient(to right, #1ef07d, #088f45);
     color: #ffffff;
     font-weight: bold;
+    background: linear-gradient(to right, #1ef07d, #088f45);
 }
 
 .btn-nav:hover {
@@ -30,21 +30,21 @@ body {
 }
 
 .navbar-brand {
+    font-family: "Roboto Mono", monospace;
+    color: #088f45;
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    color: #088f45;
-    font-family: "Roboto Mono", monospace;
 }
 
 .navbar-brand::after{
+    background: #088f45;
     content: "";
     position: absolute;
     width: 0;
     height: 2px;
-    background: #088f45;
     left: 0;
-    bottom: 7px;
+    bottom: 4px;
     transition: width 0.3s;
 }
 
@@ -74,8 +74,8 @@ body {
 }
 
 .main-subtitle {
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
+    font-family: "roboto mono", monospace;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -116,12 +116,9 @@ body {
 
 .carousel-item img {
     border-radius: 20px;
+    height: 250px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-}
-
-.carousel-item img {
-    height: 250px;
     object-fit: cover;
     object-position: center;
 }
