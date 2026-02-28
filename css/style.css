@@ -5,41 +5,42 @@
 }
 
 .btn-nav {
+    font-family: "Roboto Mono", monospace;
     border-style: none;
     border-radius: 8px;
     padding: 6px 10px;
     margin: 5px;
-    background-color: #1dda72;
+    background: linear-gradient(to right, #1ef07d, #088f45);
     color: #ffffff;
     font-weight: bold;
 }
 
 .btn-nav:hover {
-    background-color: #18ed78;
+    padding: 7px 11px;
+    transition: all 0.1s ease-in-out;
 }
 
 .navbar-brand {
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    color: #1dda72;
+    color: #088f45;
     font-family: "Roboto Mono", monospace;
 }
-
 
 .navbar-brand::after{
     content: "";
     position: absolute;
     width: 0;
     height: 2px;
-    background: #18ed78;
+    background: #088f45;
     left: 0;
     bottom: 7px;
     transition: width 0.3s;
 }
 
 .navbar-brand:hover{
-    color: #18ed78;
+    color: #088f45;
 }
 
 .navbar-brand:hover::after{
@@ -54,14 +55,19 @@
 }
 
 .main-title {
+    font-family: "Roboto Mono", monospace;
     font-weight: 600;
-    color: #1dda72;
+    background: linear-gradient(to right, #1dda72, #088f45);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     margin-bottom: 15px;
 }
 
 .main-subtitle {
     font-family: "Comic Neue", cursive;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
@@ -74,6 +80,7 @@
 
 .main-btn {
     border: 2.5px solid #1dda72;
+    font-family: "Roboto Mono", monospace;
     color: #1dda72;
     background-color: #ffffff;
     font-weight: bold;
