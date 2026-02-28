@@ -118,6 +118,7 @@
         margin: 40px 20px; 
         text-align: center; 
         height: auto;
+        margin-top: 40px;
     }
 
     .main-title {
@@ -130,7 +131,7 @@
 
     #carouselExampleIndicators {
         width: 100%; 
-        margin-top: 20px; 
+        margin-top: 50px; 
     }
 
     .carousel-item img {
