@@ -1,0 +1,139 @@
+.navbar {
+    background-color: #ffffff;
+    height: 60px;
+    border-bottom: 1px solid #dedede;
+}
+
+.btn-nav {
+    border-style: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 5px;
+    background-color: #1dda72;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-nav:hover {
+    background-color: #18ed78;
+}
+
+.navbar-brand {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1dda72;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+.navbar-brand::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #18ed78;
+    left: 0;
+    bottom: 7px;
+    transition: width 0.3s;
+}
+
+.navbar-brand:hover{
+    color: #18ed78;
+}
+
+.navbar-brand:hover::after{
+    width: 100%;
+}
+
+.main-menu{
+    background-color: #ffffff;
+    height: 51.5vh;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+
+.main-title {
+    font-weight: 600;
+    color: #1dda72;
+}
+
+.main-subtitle {
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+}
+
+.customTitle-delay {
+    animation-delay: 0.1s;
+}
+.customBtn-delay {
+    animation-delay: 0.5s;
+}
+
+.main-btn {
+    border: 2.5px solid #1dda72;
+    color: #1dda72;
+    background-color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-btn:hover {
+    background: linear-gradient(to right, #1ef07d, #088f45);
+    color: #ffffff;
+    border-color: #1ef07d;
+}
+
+#carouselExampleIndicators {
+    border-radius: 20px; 
+    overflow: hidden;
+    transform: translateZ(0); 
+    isolation: isolate; 
+    width: 80%;
+}
+
+.carousel-item {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.carousel-item img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .main-menu {
+        margin: 40px 20px; 
+        text-align: center; 
+        height: auto;
+    }
+
+    .main-title {
+        font-size: 28px; 
+    }
+
+    .main-subtitle {
+        font-size: 16px;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .carousel-item img {
+        height: 250px; 
+    }
+}
