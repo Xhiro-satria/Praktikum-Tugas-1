@@ -56,11 +56,13 @@
 .main-title {
     font-weight: 600;
     color: #1dda72;
+    margin-bottom: 15px;
 }
 
 .main-subtitle {
     font-family: "Comic Neue", cursive;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .customTitle-delay {
