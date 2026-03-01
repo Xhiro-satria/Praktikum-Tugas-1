@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+Rounded+1c&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style1.css">
     <title>PureEnergy - Renewable Energy Solutions</title>
 </head>
@@ -19,28 +20,28 @@
                 <h3 class="mb-4 mt-4 text-center form-title">Pure<span  style="color: rgb(219, 208, 3);">Energy</span> Form</h3>        
                 <form action="" method="post">
                     <div class="mb-1">
-                        <label class="form-label">Nama:</label>
-                        <input type="text" name="name" class="form-control form-control-sm" required>
+                        <label class="form-label input-text">Nama:</label>
+                        <input type="text" name="name" class="form-control form-control-sm input" required>
                     </div>
                     
                     <div class="mb-1">
-                        <label class="form-label">Email:</label>
-                        <input type="email" name="email" class="form-control form-control-sm" required>
+                        <label class="form-label input-text">Email:</label>
+                        <input type="email" name="email" class="form-control form-control-sm input" required>
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label">Password:</label>
-                        <input type="password" name="password" class="form-control form-control-sm" required>
+                        <label class="form-label input-text">Password:</label>
+                        <input type="password" name="password" class="form-control form-control-sm input" required>
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label">Luas Tanah:</label>
-                        <input type="number" name="number" class="form-control form-control-sm" required>
+                        <label class="form-label input-text">Luas Tanah:</label>
+                        <input type="number" name="number" class="form-control form-control-sm input" required>
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label">Jenis Energi:</label>
-                        <select name="energy" class="form-select form-select-sm">
+                        <label class="form-label input-text">Jenis Energi:</label>
+                        <select name="energy" class="form-select form-select-sm input">
                             <option value="solar">Solar</option>
                             <option value="wind">Wind</option>
                             <option value="hydro">Hydro</option>
@@ -48,9 +49,10 @@
                     </div>
 
                     <div class="mb-2">
-                        <label class="d-block mb-1">Paket:</label>
-                        <input type="radio" name="package" value="basic" id="basic"> <label for="basic" class="me-2">Basic</label>
-                        <input type="radio" name="package" value="premium" id="premium"> <label for="premium">Premium</label>
+                        <label class="d-block mb-1 input-text">Paket:</label>
+                        <input type="radio" name="package" value="basic" id="basic"><label for="basic" class="me-2 input-text">&nbsp;Basic&nbsp;</label>
+                        <input type="radio" name="package" value="premium" id="premium"><label for="premium" class="input-text">&nbsp;Premium&nbsp;&nbsp;</label>
+                        <input type="radio" name="package" value="ultimate" id="ultimate"><label for="ultimate" class="input-text">&nbsp;Ultimate</label>
                     </div>
 
                     <div class="mb-3">
@@ -58,15 +60,17 @@
                         <label for="checkbox" class="small">Setuju syarat & ketentuan</label>
                     </div>
                     <div class="d-flex">
-                        <button type="reset" class="btn col-md-1 btn-reset"><i class="bi bi-arrow-repeat "></i></button>
-                        <button type="submit" class="btn col-md-10 w-80 btn-submit">Submit</button>
+                        <button type="reset" class="btn col-md-1 btn-reset justify-content-center align-items-center" style="width: 40px; height: 40px;"><i class="bi bi-arrow-repeat" style="color: #ffffff;"></i></button>
+                        <button type="submit" class="btn col-md-10 btn-submit">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
 
         <div class="col-md-5 p-0 d-none d-md-block">
-            <img src="../assets/form.jpg" alt="Renewable Energy" style="width: 100%; height: 100vh; object-fit: cover;">
+            <img src="../assets/form.jpg" class="img-form" alt="Renewable Energy" style="width: 100%; height: 100vh; object-fit: cover;">
+            <div class="text-overlay-title form-title">Pure<span  style="color: rgb(219, 208, 3);">Energy</span></div>
+            <div class="text-overlay">Renewable Energy Starts Here</div>
         </div>
     </div>
 </div>

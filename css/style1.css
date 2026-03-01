@@ -11,6 +11,18 @@
     color: #088f45;
 }
 
+.input-text {
+    font-family: "Roboto Mono", monospace;
+    color: #000000;
+    font-size: 16px;
+}
+
+.input {
+    border: 1px solid #088f45;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
 .btn-submit {
     font-family: "Roboto Mono", monospace;
     border-style: none;
@@ -23,6 +35,7 @@
 
 .btn-submit:hover {
     background: linear-gradient(to right, #12ff7d, #009845);
+    color: #ffffff;
     transition: all 0.1s ease-in-out;
 }
 
@@ -36,4 +49,67 @@
     margin-right: 30px;
 }
 
-bi {}
+.btn-reset:hover {
+    background-color: #ff2121;
+    color: #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+
+.img-form {
+    filter: brightness(60%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(48%, 800%);
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+.text-overlay-title  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(60%, 270%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .form-title {
+        font-size: 24px;
+    }
+
+    .input-text {
+        font-size: 14px;
+    }
+
+    .btn-submit, .btn-reset {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+    .btn-submit {
+        padding: 0px 77px;
+    }
+    .btn-reset {
+        padding: 0px 10px;
+    }
+
+    .text-overlay {
+        font-size: 16px;
+        transform: translate(-50%, -50%);
+    }
+
+    .text-overlay-title {
+        font-size: 28px;
+        transform: translate(-50%, -50%);
+    }
+
+    .img-form {
+        width: 100%;
+        height: auto;
+    }
+}
