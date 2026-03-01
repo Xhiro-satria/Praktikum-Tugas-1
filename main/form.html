@@ -6,60 +6,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+Rounded+1c&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+Rounded+1c&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style1.css">
     <title>PureEnergy - Renewable Energy Solutions</title>
 </head>
+
 <body>
     <div class="container-fluid vh-100">
     <div class="row h-100">
-<a href="../index.html" class="arrow-back animate__animated animate__fadeInLeft">
-    <i class="bi bi-arrow-left-circle"></i>
-</a>        <div class="col-md-7 d-flex align-items-center justify-content-center">
-            <div style="width: 80%; max-width: 400px;">
+        <a href="../index.html" class="arrow-back animate__animated animate__fadeInLeft">
+            <i class="bi bi-arrow-left-circle"></i>
+        </a>        
+        <div class="col-md-7 d-flex align-items-center justify-content-center">
+            <div class="ex-main">
                 <h3 class="mb-3 mt-2 text-center form-title animate__animated animate__fadeInLeft">Pure<span  style="color: rgb(219, 208, 3);">Energy</span> Form</h3>        
                 <form action="landing.html" method="get" class="animate__animated animate__fadeInLeft"> 
                     <div class="mb-1">
-                        <label class="form-label input-text">Nama:</label>
-                        <input type="text" name="name" class="form-control form-control-sm input" required>
+                        <label class="form-label input-text" for="name">Nama:</label>
+                        <input type="text" id="name" class="form-control form-control-sm input" placeholder="name" required>
                     </div>
                     
                     <div class="mb-1">
-                        <label class="form-label input-text">Email:</label>
-                        <input type="email" name="email" class="form-control form-control-sm input" required>
+                        <label class="form-label input-text" for="email">Email:</label>
+                        <input type="email" id="email" class="form-control form-control-sm input" placeholder="example@gmail.com" required>
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label input-text">Password:</label>
-                        <input type="password" name="password" class="form-control form-control-sm input" required>
+                        <label class="form-label input-text" for="password">Password:</label>
+                        <input type="password" id="password" class="form-control form-control-sm input" placeholder="password" min="4" required>
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label input-text">Luas Tanah:</label>
-                        <input type="number" name="number" class="form-control form-control-sm input" required>
+                        <label class="form-label input-text" for="number">Jumlah Unit:</label>
+                        <input type="number" id="number" class="form-control form-control-sm input" placeholder="0" required min="0">
                     </div>
 
                     <div class="mb-1">
-                        <label class="form-label input-text">Jenis Energi:</label>
-                        <select name="energy" class="form-select form-select-sm input">
-                            <option value="solar">Solar</option>
-                            <option value="wind">Wind</option>
-                            <option value="hydro">Hydro</option>
+                        <label class="form-label input-text">Produk:</label>
+                        <select class="form-select form-select-sm input">
+                            <option>Pilih Jenis Produk</option>
+                            <option>Panel Surya</option>
+                            <option>Turbin Angin</option>
+                            <option>Tesla Powerwall</option>
                         </select>
                     </div>
 
                     <div class="mb-2">
                         <label class="d-block mb-1 input-text">Paket:</label>
-                        <input type="radio" name="package" value="basic" id="basic"><label for="basic" class="me-2 input-text">&nbsp;Basic&nbsp;</label>
-                        <input type="radio" name="package" value="premium" id="premium"><label for="premium" class="input-text">&nbsp;Premium&nbsp;&nbsp;</label>
-                        <input type="radio" name="package" value="ultimate" id="ultimate" class="radio-1"><label for="ultimate" class="input-text">&nbsp;Ultimate</label>
+                        <input type="radio" name="package" id="basic"><label class="me-2 input-text">&nbsp;Basic&nbsp;</label>
+                        <input type="radio" name="package" id="premium"><label class="input-text">&nbsp;Standard&nbsp;&nbsp;</label>
+                        <input type="radio" name="package" id="ultimate"><label class="input-text">&nbsp;Premium</label>
                     </div>
 
                     <div class="mb-3">
-                        <input type="checkbox" id="checkbox" required>
-                        <label for="checkbox" class="small text-secondary">Setuju syarat & ketentuan</label>
+                        <input type="checkbox" required>
+                        <label class="small text-secondary">Setuju syarat & ketentuan</label>
                     </div>
                     <div class="d-flex">
                         <button type="reset" class="btn col-md-1 btn-reset justify-content-center align-items-center" style="width: 40px; height: 40px;"><i class="bi bi-arrow-repeat" style="color: #ffffff;"></i></button>
@@ -70,7 +73,7 @@
         </div>
 
         <div class="col-md-5 p-0 d-none d-md-block animate__animated animate__fadeInRight">
-            <img src="../assets/form.jpg" class="img-form" alt="Renewable Energy" style="width: 100%; height: 100vh; object-fit: cover;">
+            <img src="../assets/form.jpg" class="img-form" alt="Renewable Energy">
             <div class="text-overlay-title form-title">Pure<span  style="color: rgb(219, 208, 3);">Energy</span></div>
             <div class="text-overlay">Renewable Energy Starts Here</div>
         </div>

@@ -36,6 +36,11 @@ body, html {
     font-size: 16px;
 }
 
+.ex-main{
+    width: 80%; 
+    max-width: 400px;
+}
+
 .input {
     border: 1px solid #088f45;
     border-radius: 8px;
@@ -76,6 +81,7 @@ body, html {
 
 .img-form {
     filter: brightness(60%);
+    width: 100%; height: 100vh; object-fit: cover;
 }
 
 .text-overlay {

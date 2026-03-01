@@ -8,8 +8,8 @@ body {
 }
 
 .navbar {
-    background-color: #ffffff;
     height: 60px;
+    background-color: #ffffff;
     border-bottom: 1px solid #dedede;
 }
 
@@ -19,8 +19,8 @@ body {
     border-radius: 8px;
     padding: 6px 10px;
     margin: 5px;
-    color: #ffffff;
     font-weight: bold;
+    color: #ffffff;
     background: linear-gradient(to right, #1ef07d, #088f45);
 }
 
@@ -87,18 +87,18 @@ body {
 }
 
 .main-btn {
-    border: 2.5px solid #1dda72;
     font-family: "Roboto Mono", monospace;
-    color: #1dda72;
+    border: 2.5px solid #1dda72;
     background-color: #ffffff;
+    color: #1dda72;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
 
 .main-btn:hover {
-    background: linear-gradient(to right, #1ef07d, #088f45);
     color: #ffffff;
     border-color: #1ef07d;
+    background: linear-gradient(to right, #1ef07d, #088f45);
 }
 
 #carouselExampleIndicators {
