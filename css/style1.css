@@ -15,11 +15,13 @@ body, html {
 .arrow-back {
     position: absolute;
     top: 20px;
-
     font-size: 30px;
     color: #088f45;
     cursor: pointer;
     z-index: 10;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content; /* biar a ngepas sama iconnya */
 }
 
 .form-title {
