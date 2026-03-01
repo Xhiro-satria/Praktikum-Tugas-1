@@ -63,17 +63,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(48%, 800%);
+    transform: translate(-80%, 920%);
     color: #ffffff;
     font-family: "Roboto Mono", monospace;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 .text-overlay-title  {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(60%, 270%);
+    transform: translate(-85%, 250%);
     font-size: 40px;
     font-weight: bold;
 }
