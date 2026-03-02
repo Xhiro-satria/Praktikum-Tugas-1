@@ -101,6 +101,22 @@ body {
     background: linear-gradient(to right, #1ef07d, #088f45);
 }
 
+.main-arrow{
+    font-size: 28px;
+    color: #088f45;
+    margin-left: 10px;   
+}
+
+@keyframes main-arrow {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.main-arrow {
+    animation: main-arrow 1.5s infinite;
+}
+
 #carouselExampleIndicators {
     border-radius: 20px; 
     overflow: hidden;
@@ -141,6 +157,10 @@ body {
 
     .main-subtitle {
         font-size: 16px;
+    }
+
+    .main-btn {
+        margin-left: 90px;
     }
 
     #carouselExampleIndicators {
