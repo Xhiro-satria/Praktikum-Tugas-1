@@ -43,6 +43,22 @@ body, html {
     background: linear-gradient(to right, #088f45, #1ef07d);
 }
 
+@keyframes floatUpDown {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-15px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+.img-fluid {
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
 @media screen and (max-width: 768px) {
     .title {
         margin-left: 15px;
