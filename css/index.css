@@ -8,9 +8,17 @@ body {
 }
 
 .navbar {
-    height: 60px;
     background-color: #ffffff;
     border-bottom: 1px solid #dedede;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .btn-nav {
@@ -25,7 +33,6 @@ body {
 }
 
 .btn-nav:hover {
-    padding: 7px 11px;
     transition: all 0.1s ease-in-out;
 }
 
@@ -61,6 +68,20 @@ body {
 
 .navbar-brand:hover::after{
     width: 100%;
+}
+
+.nav-panel {
+    font-family: "Roboto Mono", monospace;
+    color: #088f45;
+    font-size: 16px;
+    margin: 0 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-panel:hover {
+    color: #1dda72;
+    transition: all 0.1s ease-in-out;
 }
 
 .main-menu{
@@ -149,6 +170,19 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-panel {
+        display: block;
+        padding: 8px 0;
+    }
+
+    .navbar-nav {  
+        text-align: left;
+    }
+
     .navbar-brand{
         font-size:22px;
     }
@@ -192,7 +226,6 @@ body {
         font-size:22px;
     }
 
-    /* Carousel */
     #carouselExampleIndicators{
         width:100%;
         margin:35px auto 0 auto;
@@ -202,5 +235,4 @@ body {
         height:200px;
         object-fit:cover;
     }
-
 }

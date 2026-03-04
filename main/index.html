@@ -15,16 +15,24 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown">
+        <div class="container">
             <a class="navbar-brand" href="">
                 <img src="../assets/logo.png" class="navbar-logo" alt="logo">Pure<span style="color: rgb(219, 208, 3);">Energy</span>
             </a>
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">  
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="" class="nav-link nav-panel">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link nav-panel">About</a></li>
+                    <li class="nav-item"><a href="" class="nav-link nav-panel" style="margin-right: 30px;">Services</a></li>
                     <li class="nav-item">
                         <a href="https://instagram.com/strdn99"><button class="btn-nav">Contact</button></a>
                     </li>
                 </ul>
+            </div>
         </div>
     </nav>
     <!-- navbar end -->
@@ -79,6 +87,6 @@
     </main>
     <!-- main end -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
