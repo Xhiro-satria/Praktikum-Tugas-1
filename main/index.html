@@ -15,7 +15,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
         <div class="container">
             <a class="navbar-brand" href="">
                 <img src="../assets/logo.png" class="navbar-logo" alt="logo">Pure<span style="color: rgb(219, 208, 3);">Energy</span>
@@ -25,9 +25,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-start" id="navbarNav">  
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="" class="nav-link nav-panel">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link nav-panel">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link nav-panel" style="margin-right: 30px;">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link nav-panel">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link nav-panel">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link nav-panel" style="margin-right: 30px;">Services</a></li>
                     <li class="nav-item">
                         <a href="https://instagram.com/strdn99"><button class="btn-nav">Contact</button></a>
                     </li>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-md-5">
                 <!-- carousel -->
-                    <div id="carouselExampleIndicators" class="carousel rounded-4 slide overflow-hidden" data-wrap="true" main-subtitle animate__animated animate__fadeInLeft >
+                    <div id="carouselExampleIndicators" class="carousel slide rounded-4 overflow-hidden" data-bs-ride="carousel" data-wrap="true" main-subtitle animate__animated animate__fadeInLeft >
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -86,7 +86,70 @@
         </div>
     </main>
     <!-- main end -->
-    
+
+    <!-- about -->
+    <section id="about" class="about-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 about-image animate__animated animate__fadeInRight about-img">
+                    <img src="../assets/turbin1.jpg" alt="About Us" class="img-fluid rounded-4">
+                </div>
+                <div class="col-md-6 about-text animate__animated animate__fadeInLeft about-text">
+                    <h2>About Us</h2>
+                    <p style="text-align: justify;">PureEnergy adalah perusahaan yang berkomitmen untuk menyediakan solusi energi terbarukan yang inovatif dan berkelanjutan. Kami percaya bahwa masa depan energi terbarukan adalah kunci untuk menciptakan dunia yang lebih bersih dan lebih hijau.</p>
+                    <!-- <p>Dengan tim ahli yang berdedikasi, kami menawarkan berbagai layanan mulai dari konsultasi hingga implementasi proyek energi terbarukan. Kami bekerja sama dengan klien untuk merancang solusi yang sesuai dengan kebutuhan mereka, membantu mereka mengurangi jejak karbon dan meningkatkan efisiensi energi.</p> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about end -->
+
+    <section class="card-section py-5" id="services">
+        <div class="container ">
+            <h2 class="text-center mb-5 mt-5 title-services">Our Services</h2>
+            <div class="row justify-content-center g-4">
+
+                
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card h-100">
+                        <img src="../assets/panel2.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Solar Panels</h5>
+                            <p class="card-text">
+                                Harnessing wind power for a greener tomorrow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card h-100">
+                        <img src="../assets/turbin2.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wind Turbine</h5>
+                            <p class="card-text">
+                                Clean and sustainable solar power solutions for the future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card h-100">
+                        <img src="../assets/tesla.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tesla Powerwall</h5>
+                            <p class="card-text">
+                                Efficient water-based renewable energy solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

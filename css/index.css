@@ -3,8 +3,11 @@ body {
     margin: 0;
     background-color: #ffffff; 
     background-image: 
-        radial-gradient(circle at 0% 100%, #a5fac3 0%, transparent 40%), 
-        radial-gradient(circle at 100% 100%, #e2ed7a 0%, transparent 40%);
+        radial-gradient(circle at 0% 40%, #a5fac3 0%, transparent 40%), 
+        radial-gradient(circle at 40% 70%, #62fcff 0%, transparent 25%), 
+        radial-gradient(circle at 0% 100%, #fede41 0%, transparent 15%), 
+        radial-gradient(circle at 100% 100%, #a5fac3 0%, transparent 20%), 
+        radial-gradient(circle at 100% 40%, #e2ed7a 0%, transparent 40%);
 }
 
 .navbar {
@@ -85,9 +88,9 @@ body {
 }
 
 .main-menu{
-    min-height: 51.5vh;
+    min-height: 68vh;
     margin-left: 190px;
-    margin-top: 120px;
+    margin-top: 190px;
 }
 
 .main-title {
@@ -169,6 +172,59 @@ body {
     object-position: center;
 }
 
+.about-section {
+    padding: 50px 0;
+    height: 100vh;
+}
+
+.about-img {
+    max-width: 400px;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+.about-text {
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.about-text h2 {
+    color: #088f45;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-session {
+    height: 100vh;
+}
+
+.title-services {
+    font-family: "Roboto Mono", monospace;
+    color: #088f45;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);   /* Membesar 5% */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 200px;      
+    object-fit: cover;    
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 0;
@@ -193,7 +249,7 @@ body {
     }
 
     .main-menu{
-        margin:60px 20px 0 20px;
+        margin:120px 20px 0 20px;
         text-align:center;
         min-height:auto;
     }
@@ -234,5 +290,13 @@ body {
     .carousel-item img{
         height:200px;
         object-fit:cover;
+    }
+
+    .about-img {
+        display: none;
+    }
+    .about-text {
+        max-width: 80%;
+        margin-left: 40px;
     }
 }
