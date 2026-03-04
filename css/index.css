@@ -215,7 +215,7 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);   /* Membesar 5% */
+    transform: scale(1.05); 
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
@@ -224,6 +224,18 @@ body {
     object-fit: cover;    
 }
 
+.card-title {
+    font-family: "Roboto Mono", monospace;
+    color: #088f45;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: "Roboto Mono", monospace;
+    color: #333333;
+    font-size: 16px;
+}
 
 @media (max-width: 768px) {
     .navbar {
